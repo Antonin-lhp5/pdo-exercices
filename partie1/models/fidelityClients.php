@@ -11,7 +11,7 @@ class FidelityClients extends DataBase
         //utilisation de magic quote pour indiquer qu'il s'agit de champs et de table ...
 
         // On stick la requête dans une variable
-        $query = 'SELECT `id`, `lastname`, `firstname` FROM `clients`';
+        $query = 'SELECT `id`, `lastname`, `firstname` FROM `clients` WHERE `card` = 1';
 
         // On utilise la méthode query pour exécuter notre requête
         $queryObj = $this->dataBase->query($query);
