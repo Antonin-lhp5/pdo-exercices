@@ -7,9 +7,15 @@ require_once ('controllers/index.controller.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Site patient</title>
 </head>
 <body>
-    <h1>mon site </h1>
+    
+    <div class="container">
+    <h1 class="py-4">Mon Hôpital</h1>
+    <?php include ('models/ajout-patient.php')?>
+    </div>
+    
 </body>
 </html>

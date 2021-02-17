@@ -157,22 +157,23 @@ require_once 'controllers/index-controller.php'
                 </tr>
             </thead>
             <tbody>
-               
+
                 <?php foreach ($InfoClientArray as $client) { ?>
 
                     <tr>
                         <td><?= $client['lastname'] ?></td>
                         <td><?= $client['firstname'] ?></td>
                         <td><?= $client['birthdate'] ?></td>
-                        <td><?= $client['card'] ?></td>
+                        <td><?php
+                            if ($client['card'] == 1) {
+                                echo "oui";
+                            } else {
+                               echo "non";
+                            }; 
+                            ?></td>
                         <td><?= $client['cardnumber'] ?></td>
                     </tr>
                 <?php } ?>
-                <?php if ($client['card'] === 0) {
-                    $client['card'] = "non";
-                } else {
-                    $client['card'] = "oui";
-                }; ?>
             </tbody>
         </table>
     </div>
