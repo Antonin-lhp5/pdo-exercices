@@ -18,25 +18,21 @@ require_once 'controllers/IndexController.php';
 
     <div class="container">
         <h1 class="h1 py-4 font-weight-bold text-center">Colyseum</h1>
-        <a href="show.php"> -> Types de spectacle</a>
-        <a href="twentyClients.php"> -> 20 premiers clients</a>
-        <a href="fidelityClients.php"> -> fidélité des clients</a>
-        <a href="Mclients.php"> -> fidélité des clients</a>
-        <h2 class="h2 py-2">Les clients</h2>
+        <a href="index.php"> -> Accueil</a>
+        <h2 class="h2 py-2">Types de spectacle</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">id</th>
-                    <th scope="col">Firstname</th>
-                    <th scope="col">Lastname</th>
+                    <th scope="col">Type</th>
+
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($allclientsArray as $client) { ?>
+                <?php foreach ($MclientsArray as $type) { ?>
                     <tr>
-                        <td><?= $client['id'] ?></td>
-                        <td><?= $client['firstname'] ?></td>
-                        <td><?= $client['lastname'] ?></td>
+                        <td><?= $type['id'] ?></td>
+                   
                     </tr>
                 <?php } ?>
             </tbody>

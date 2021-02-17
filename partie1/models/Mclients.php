@@ -1,21 +1,19 @@
 <?php
 //clients est un enfant de la classe Database, et hérite donc de ses attributs + méthodes.
-class FidelityClients extends DataBase
+class Mclients extends DataBase
 {
     /**
      * Fonction permettant d'obtenir tous les clients de la table client
      * Nous obtenons les champs id, lastname et firstname
      */
-    public function getFidelityClients()
+    public function getMclients()
     {
         //utilisation de magic quote pour indiquer qu'il s'agit de champs et de table ...
 
         // On stick la requête dans une variable
-        $query = 'SELECT `lastname`, `firstname`, `clients`.`id`, `type`
-        FROM `clients`
-        INNER JOIN `cardtypes`
-        ON `clients`.`card` = `cardtypes`.`id`
-        WHERE `card` = 1';
+        $query = "SELECT `lastname`, `firstname`, `clients`.`id`, 
+        FROM clients
+        WHERE clients.lastName LIKE 'm%''";
 
        // On utilise la méthode query pour exécuter notre requête
        $queryObj = $this->dataBase->query($query);

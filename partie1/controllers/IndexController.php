@@ -5,6 +5,7 @@ require_once 'models/clients.php';
 require_once 'models/showsTypes.php';
 require_once 'models/twentyClients.php';
 require_once 'models/fidelityClients.php';
+require_once 'models/Mclients.php';
 
 $clientsObj = new Clients;
 $allclientsArray = $clientsObj->getAllClients();
@@ -17,3 +18,6 @@ $allShowTypesArray = $showTypesObj->getAllShowTypes();
 
 $fidelityObj = new FidelityClients; 
 $fidelityArray = $fidelityObj->getFidelityClients();
+
+// $MclientsObj = new Mclients; 
+// $MclientsArray = $MclientsObj->getMclients();

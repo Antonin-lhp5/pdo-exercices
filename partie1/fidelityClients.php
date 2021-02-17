@@ -26,6 +26,7 @@ require_once 'controllers/IndexController.php';
                     <th scope="col">id</th>
                     <th scope="col">Firstname</th>
                     <th scope="col">Lastname</th>
+                    <th scope="col">carte</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,6 +35,7 @@ require_once 'controllers/IndexController.php';
                         <td><?= $client['id'] ?></td>
                         <td><?= $client['firstname'] ?></td>
                         <td><?= $client['lastname'] ?></td>
+                        <td><?= $client['type'] ?></td>
                     </tr>
                 <?php } ?>
             </tbody>

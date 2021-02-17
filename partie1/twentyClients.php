@@ -29,7 +29,7 @@ require_once 'controllers/IndexController.php';
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($twentyclientsArray as $client) { ?>
+                <?php foreach ($MclientArray as $client) { ?>
                     <tr>
                         <td><?= $client['id'] ?></td>
                         <td><?= $client['firstname'] ?></td>
