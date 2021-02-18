@@ -17,13 +17,20 @@ require_once ('../controllers/patient-controller.php');
     <div class="container">
     <h1 class="py-4">Mon Hôpital</h1>
     <a href="../index.php" class="btn btn-info">Accueil</a>
-    <a href="add-patient-html.php" class="btn btn-info">Ajouter un patient</a>
+    <a href="ajout-patient-html.php" class="btn btn-info">Retour</a>
     <hr>
+    <h1>Profil de <?php
+                // je fais un foreach pour parcourir mon tableau
+                foreach ($allPatientArray as $title) { ?> 
+                <?= $title['lastname'] ?> <?= $title['firstname'] ?> <?php } ?></h1>
         <table class="table table-striped table-dark">
             <thead>
                 <tr>
                     <th scope="col">NOM</th>
                     <th scope="col">Prénom</th>
+                    <th scope="col">Naissance</th>
+                    <th scope="col">Téléphone</th>
+                    <th scope="col">Mail</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,6 +40,9 @@ require_once ('../controllers/patient-controller.php');
                     <tr>
                         <td><?= $client['lastname'] ?></td>
                         <td><?= $client['firstname'] ?></td>
+                        <td><?= $client['birthdate'] ?></td>
+                        <td><?= $client['phone'] ?></td>
+                        <td><?= $client['mail'] ?></td>
                     </tr>
                 <?php } ?>
             </tbody>

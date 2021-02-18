@@ -19,6 +19,7 @@ require_once '../controllers/add-patient-controller.php';
 
   <h1 class="py-4">Mon Hôpital</h1>
   <a href="../index.php" class="btn btn-info">Accueil</a>
+  <a href="patient-html.php" class="btn btn-info">Liste des patients</a>
 
   <form class="pt-4" method="POST" action="">
     <div class="form-group">
@@ -46,7 +47,7 @@ require_once '../controllers/add-patient-controller.php';
       <input type="email" class="form-control" id="mail" name="mail" placeholder="name@example.com">
       <span class="text-danger"><?= $errors['mail'] ?? '' ?></span>
     </div>
-    <input type="submit" name="submit" value="Envoyé" class="btn btn-success"></input>
+    <input type="submit" name="submit" value="+ Ajouter" class="btn btn-success"></input>
   </form>
 
 </div>

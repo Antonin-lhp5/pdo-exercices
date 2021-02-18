@@ -3,12 +3,10 @@
 require_once '../models/database.php';
 require_once '../models/patient.php';
 
-var_dump($_POST);
-
 // Regex Perso
-$regexName = '/^[a-zA-Zéèê\-]+$/';
+$regexName = '/^[a-zA-Zéèêçë\-]+$/';
 $regexNumber = '/^0[0-9]{9}$/';
-$regexDate = '/^(([0]{1}[1-9]{1})|([1-2]{1}[0-9]{1})|([3]{1}[0-1]{1}))$/';
+$regexDate = '/^([0-9]{4})-([0][1-9]|[1][0-2])-([0][1-9]|[1-2][0-9]|[3][0-1])$/';
 
 // mise en place d'un tableau d'erreurs
 $errors = [];
@@ -90,7 +88,7 @@ if (isset($_POST['submit'])) {
         $patientDetails = [
             'lastname' => htmlspecialchars($_POST['lastname']),
             'firstname' => htmlspecialchars($_POST['firstname']),
-            'birthdate' => htmlspecialchars($_POST['birthdate']),
+            'birthdate' => htmlspecialchars($_POST['date']),
             'mail' => htmlspecialchars($_POST['mail']),
             'phone' => htmlspecialchars($_POST['phone']),
         ];
