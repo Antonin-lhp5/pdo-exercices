@@ -16,7 +16,7 @@ require_once('controllers/index.controller.php');
 
     <div class="container">
         <h1 class="py-4">Mon Hôpital</h1>
-        <a href="view/ajout-patient-html.php" class="btn btn-info">Ajouter un patient</a>
+        <a href="view/add-patient-html.php" class="btn btn-info">Ajouter un patient</a>
         <a href="view/patient-html.php" class="btn btn-info">Liste des patients</a>
     </div>
 
