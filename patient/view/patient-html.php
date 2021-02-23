@@ -24,6 +24,7 @@ require_once ('../controllers/patient-controller.php');
                 <tr>
                     <th scope="col">NOM</th>
                     <th scope="col">Prénom</th>
+                    <th scope="col">Profil</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,6 +34,7 @@ require_once ('../controllers/patient-controller.php');
                     <tr>
                         <td><?= $client['lastname'] ?></td>
                         <td><?= $client['firstname'] ?></td>
+                        <td><a href="#" class="link text-light">Profil</a></td>
                     </tr>
                 <?php } ?>
             </tbody>

@@ -20,9 +20,6 @@ require_once('controllers/index.controller.php');
         
         <h1 class="py-4">Mon Hôpital</h1>
       
-        
-       
-
         <div class="row">
             <div class="card-group pb-5">
                 <div class="card">
