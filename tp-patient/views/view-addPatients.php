@@ -19,7 +19,7 @@ require_once '../controllers/controller-addPatients.php';
 
    <div class="row">
 
-      <div class="container border border-secondary shadow mt-5 p-4 col-6">
+      <div class="container shadow-sm mt-5 p-4 col-6">
 
          <div class="text-center text-primary"><i class="fas fa-hospital-user p-2 logo"></i></div>
          <p class="text-center text-primary text-uppercase h3 mb-3">Enregistrement du patient</p>

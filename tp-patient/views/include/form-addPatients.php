@@ -6,7 +6,7 @@
                  <span class="error"><?= $errors['lastname'] ?? '' ?></span>
              </div>
              <div class="input-group input-group-sm mb-3">
-                 <input id="lastname" name="lastname" type="text" class="form-control" placeholder="ex. DOE" value="<?= isset($_POST['lastname']) ? htmlspecialchars($_POST['lastname']) : '' ?>" required>
+                 <input id="lastname" name="lastname" type="text" class="form-control" placeholder="ex. Sparrow" value="<?= isset($_POST['lastname']) ? htmlspecialchars($_POST['lastname']) : '' ?>" required>
              </div>
 
              <!-- Prénom -->
@@ -15,7 +15,7 @@
                  <span class="error"></span>
              </div>
              <div class="input-group input-group-sm mb-3">
-                 <input id="firstname" name="firstname" type="text" class="form-control" placeholder="ex. John" required>
+                 <input id="firstname" name="firstname" type="text" class="form-control" placeholder="ex. Jack" required>
              </div>
 
              <!-- Date de naissance  -->
@@ -33,7 +33,7 @@
                  <span class="error"></span>
              </div>
              <div class="input-group input-group-sm mb-3">
-                 <input id="phone" name="phone" type="text" class="form-control" placeholder="ex. 0612XXXXXX" required>
+                 <input id="phone" name="phone" type="text" class="form-control" placeholder="ex. 06XXXXXXXX" required>
              </div>
 
              <!-- Adresse mail -->
@@ -42,7 +42,7 @@
                  <span class="error"><?= $errors['mail'] ?? '' ?></span>
              </div>
              <div class="input-group input-group-sm mb-3">
-                 <input id="mail" name="mail" type="mail" class="form-control" placeholder="ex. mail@mail.fr" required>
+                 <input id="mail" name="mail" type="mail" class="form-control" placeholder="ex. maildejack@mail.fr" required>
              </div>
 
              <button type="submit" class="btn btn-sm btn-primary" name="addPatientBtn">Enregistrer</button>
